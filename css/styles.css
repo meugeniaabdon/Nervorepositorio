@@ -9,37 +9,26 @@
 
 /* Diseño header */
 
-.navLogo img{
-    width: 100px;
-    margin-left: 25px;
-}
-
-.barraNav{
-display: flex;
-flex-direction: row;
-}
-
-.barraNav ul{
+ul{
     display: flex;
     justify-content: end;
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
-    font-size: 20px;
-    font-family: 'Source Sans 3', sans-serif;
     width: 100%;
     text-align: right;
     padding: 15px;
     margin: auto;
-
+    color: black;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    width: 100%;
 }
-.navList{
-    margin: 0 10px;
-}
 
-
-.navbar-nav ul{
-    justify-content: end;
+.navbar-brand{
+    color: rgba(22, 21, 21, 0.733);
+    padding: 15px;
+    font-size: 17px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 img{
@@ -69,9 +58,9 @@ img{
 }
 
 .bannerTres{
-    height: 100vh;
+    height: 80vh;
+    background: url(../img/banner28.png);
     position: relative;
-    background: url(../img/banner15.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -85,7 +74,7 @@ img{
     top: 60%;
     left: 50%;
     width: 100%;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Cinzel', serif;
     line-height: 1,5em;
     font-size: 35px;
     margin-top: 25px;
@@ -99,24 +88,35 @@ img{
     top: 50%;
     left: 25%;
     width: 100%;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 20px;
     margin-top: 25px;
 }
 
+.banner_descripcionCuatro{
+    position: absolute;
+    text-align: center;
+    color: black;
+    top: 50%;
+    bottom: 10%;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+       
+}
 .button_banner{
     background: rgb(180, 159, 127);
     border: none;
     padding: 12px;
     color: black;
     font-size: 20px;
-    font-family: 'Source Sans 3', sans-serif;;
+    font-family: 'Cinzel', serif;
 }
 
 .button_banner:hover{
     border: 2px ;
     background: none;
 }
+
 
 /* Diseño main */
 
@@ -137,12 +137,14 @@ main {
 }
 
 .formcolor{
-    max-width: 29em;
-    font-family:'Cinzel', serif;
     margin: 0 auto;
     padding: 3em;
-}
+    max-width: 29em;
+    font-family:'Cinzel', serif;
+    font-style: italic;
+    
 
+}
 
 /* Titulos y subtitulos */
 
@@ -159,7 +161,6 @@ main {
     font-size: 30px;
     font-family: 'Cinzel', serif;
     font-weight: 500;
-    line-height: 1,5;
 }
 
 .contenedor h3{
@@ -179,6 +180,14 @@ h2{
 
 }
 
+h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    font-style: italic;
+
+}
 h4{
     color: rgba(17, 17, 17, 0.562);
     font-family: 'Cinzel', serif;
@@ -205,7 +214,6 @@ p{
     font-family: 'Cinzel', serif;
     text-align: center;
     font-weight: 400;
-    line-height: 1;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 30px;
