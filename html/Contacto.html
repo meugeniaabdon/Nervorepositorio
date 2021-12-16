@@ -13,71 +13,60 @@
 <link href = "https: //fonts.googleapis.com/css2? familia = Cinzel: wght @ 500 &familia = Fuente + Sans + 3: ital, wght @ 1200 & display = swap "rel =" stylesheet ">
     <!-- Titulo -->
     <title>NERVO DESIGN</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     
-   <!-- Logo + nav -->
-   <header class="encabezado">
-    <!-- Menu de navegacion -->
-
-    <nav class="barraNav">
-
-        <!-- Logotipo -->
-
-        <a class="navLogo" href="../index.html">
-            <img src="../img/logosinfondo2.png" alt="LOGOWEB" > 
-        </a> 
-        
-        <!-- Links de navegacion -->
-        <ul>
-            <li class="navList"><a href="../index.html">Home</a>
-            <li class="navList"><a href="Tiendaonline.html">Tienda Online</a></li>
-            <li class="navList"><a href="Casasreales.html">Casas Reales</a></li>
-            <li class="navList"><a href="Preguntas.html">Preguntas</a></li>
-            <li class="navList"><a href="Contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
 
 <div class="separador">
 
-</div>
-
     <!--FORMULARIO -->
-
-<div>
-       
-    <form action="login.php" method="get">
-    
 
     <H2>CONTACTANOS</H2>
 
-    <fieldset>
-        <div><legend> Datos personales </legend></div>
-        <div><label for="nombreusuario"> nombre </label></div>
-        <div><input type="text" placeholder="Ingrese su nombre" id="nombreusuario"></div>
+    <form action="login.php" method="get" class="formcolor" style= "background-color: #aca49585;">
+        
+      
+        <fieldset>
+    
+        <div class="mb-3">
+            
+          <div><label for="exampleImputName" class="form-label">Nombre completo</label></div>
+          <input type="Datos personales" class="form-control" id="exampleImputName" aria-describedby="NameHelp">
+          <div><small id="namelHelp" class="form-text"> Nunca compartiremos tus datos personales con nadie.</small></div>
+        </div>
+          
+        <div class="mb-3">
+            
+            <div><label for="exampleInputEmail1" class="form-label">Correo Electronico</label></div>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div><small class="form-text text-muted">Te brindaremos allí toda la información.</small></div>
+            
+        </div>   
 
-        <div><label for="email"> correo electrónico </label></div>
-        <div><input type="text" placeholder="Ingrese su correo" id="email"></div>
-        
-        <div><label for="ventas"> Ventas mayoristas</label></div>
-        <div><input type="radio" name="ventas" id="ventas"></div>
-        <div><label for="ventas min"> ventas minoristas</label></div>
-        <div><input type="radio" name="ventas" id="ventas min"></div>
-        
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>TIPO DE VENTA</option>
+            <option value="1">VENTAS MAYORISTAS</option>
+            <option value="2">VENTAS MINORISTAS</option>
+        </select>
+                
         <div><label for="ayuda">En qué podemos ayudarte? </label></div>
-        <div><textarea name="ayuda" id="ayuda" cols="30" rows="10"></textarea></div>
+        <div>
+            <textarea name="ayuda" class="form-control" id="ayuda" cols="30" rows="10"></textarea>
+        </div>
+        
+    
+        <div class="form group">
+            <button type="submit" class="btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);">ENVIAR CONSULTA</button>
+        </div>
 
+    
     </fieldset>
-    <div>
-     <button>Enviar consulta</button>
     </div>
 
-
-    </form>
-
-</div>
+      </form>
+      
+   
 
 <div class="separador">
 
@@ -90,6 +79,9 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.2534062056!2d-64.33443068351568!3d-31.399377042605156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1636645985570!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
 <!-- PIE DE PÁGINA --> 
 <footer>
     <h3>LOGO 
@@ -98,8 +90,5 @@
     <h3>Tienda Online</h3>
     
 </footer>
-
-
-
-</body>
 </html>
+
