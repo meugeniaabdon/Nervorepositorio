@@ -25,9 +25,9 @@ ul{
 .navbar-brand{
     color: rgba(22, 21, 21, 0.733);
     padding: 15px;
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Cinzel', serif;
-    font-weight: 700;
+    font-weight: 900;
     font-style: italic;
 }
 
@@ -123,6 +123,7 @@ img{
 main {
     background-color: white;
     width: 100%;
+    height: 100%;
 }
 
 .casasreales h3{
@@ -137,14 +138,24 @@ main {
 }
 
 .formcolor{
-    margin: 0 auto;
-    padding: 3em;
-    max-width: 29em;
+   
     font-family:'Cinzel', serif;
     font-style: italic;
+    padding: 2em;
+    width: 39em;
+    margin: 0 auto;
     
+}
+
+.card{
+    font-family:'Cinzel', serif;
+    font-style: italic;
+    padding: 2em;
+    width: 59em;
+    margin: 0 auto;
 
 }
+
 
 /* Titulos y subtitulos */
 
@@ -153,8 +164,7 @@ main {
     font-size: 25px;
     font-family: 'Cinzel', serif;
     font-weight: 300;
- }
-
+}
 
 .contenedor h2{
     color: black;
@@ -191,6 +201,7 @@ h3{
 h4{
     color: rgba(17, 17, 17, 0.562);
     font-family: 'Cinzel', serif;
+    font-style: italic;
     text-align: center;
 }
 
@@ -202,6 +213,7 @@ h4{
 .categoria{
     text-align: center;
     color: black;
+    font-style: italic;
     
 }
 
@@ -214,14 +226,76 @@ p{
     font-family: 'Cinzel', serif;
     text-align: center;
     font-weight: 400;
-    padding-top: 100px;
-    padding-bottom: 100px;
     padding-left: 30px;
     padding-right: 30px;
 
 }
 
+/* Tres columnas de productos */
+
+.column {
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  
+/* Efectos de la caja  */
+  .carta {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+
+  }
+  
+/* Clear floats */
+  .container:after, .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+  }
+
 /* Imagenes */
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner29.jpg");
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 
 .imagenUno :hover{
     filter: opacity(.5)
@@ -236,6 +310,11 @@ p{
     transform: rotateY(180deg);
     transform-style: preserve-3d;
 }    
+
+  
+  .button:hover {
+    background-color: #555;
+  }
 
 footer{
     text-align: center;
@@ -254,29 +333,7 @@ footer{
                          "foto7 foto8 foto9";
     }
     
-    .grillaIndex{
-        display: grid;
-        height: 100%;
-        margin: 25px;
-        justify-content: center;
-        grid-template-columns: 35% 35%;
-        grid-template-areas: "foto1 parrafoIndexUno"
-                             "foto2 parrafoIndexDos"
-                             "foto3 parrafoIndexDos";
-                            
-    }
     
-    .grillaIndex2{
-        display: grid;
-        height: 100%;
-        margin: 25px;
-        justify-content: center;
-        grid-template-columns: 35% 35%;
-        grid-template-areas: "foto1 parrafoIndexUno"
-                             "foto2 parrafoIndexDos"
-                             "foto3 parrafoIndexDos";
-                            
-    }
           
 
 /*Extra small */
@@ -337,7 +394,11 @@ footer{
         width: 100%;
     }
 
-   
+    .column {
+        width: 100%;
+        display: block;
+      }
+    }
    
 }
     /*grander escritorio, notebook*/
