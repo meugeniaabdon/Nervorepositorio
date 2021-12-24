@@ -1,0 +1,420 @@
+@import "variables";
+
+/* SCSS */
+
+/* Barra de navegación */
+
+ul{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    text-align: right;
+    padding: 15px;
+    margin: auto;
+    color: $fontcolor;
+    font-size: 18px;
+    font-family: $letraprincipal
+
+}
+
+.navbar-brand{
+    color: rgba(22, 21, 21, 0.733);
+    padding: 15px;
+    font-size: 20px;
+    font-family: $letraprincipal;
+    font-weight: 900;
+    font-style: $estilodeletra;
+}
+
+/* Imágenes principales */
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Banners */
+
+/* Banner página home */
+
+.banner{
+    height: 100vh;
+    position: relative;
+    background: url(../img/banner13.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.banner_descripcion{
+    position: absolute;
+    text-align: center;
+    color: $fontcolor;
+    transform: translateX(-50%) translateY(-50%);
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    font-family: $letraprincipal;
+    line-height: 1,5em;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+/* Banner página Preguntas */
+
+.bannerTres{
+    height: 80vh;
+    background: url(../img/banner28.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.banner_descripcionTres{
+    position: absolute;
+    text-align: center;
+    color: $fontcolor;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 25%;
+    width: 100%;
+    font-family: $letraprincipal;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+/* Banner página Casas reales */
+
+.bannerDos{
+    height: 100vh;
+    position: relative;
+    background: url(../img/banner10.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Botones de los banners */
+
+.button_banner{
+    background: $colordebtn;
+    border: none;
+    padding: 12px;
+    color: $fontcolor;
+    font-size: 20px;
+    font-family: $letraprincipal;
+}
+
+.button_banner:hover{
+    border: 2px ;
+    background: none;
+}
+
+/* Diseño main */
+
+main {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+/* Página Casas Reales */
+
+.casasreales{
+             h3{
+                font-family: $letraprincipal;
+                font-size: 25px;
+                text-align: center;
+                color: $fontcolor;
+            }
+}
+
+.casasreales {
+    margin: 20px;
+}
+
+/* Formulario */
+
+.formcolor{
+   
+    font-family: $letraprincipal;
+    font-style: $estilodeletra;
+    padding: 2em;
+    width: 39em;
+    margin: 0 auto;
+    
+}
+
+/* Caja de página home */
+
+.card{
+    font-family:$letraprincipal;
+    font-style: $estilodeletra;
+    padding: 2em;
+    width: 59em;
+    margin: 0 auto;
+
+}
+
+/* Titulos y subtitulos */
+
+.titulo{
+    text-align: center;
+    font-size: 25px;
+    font-family: $letraprincipal;
+    font-weight: 300;
+}
+
+.contenedor{ 
+            h2{
+                color: black;
+                font-size: 30px;
+                font-family: $letraprincipal;
+                font-weight: 500;
+            }
+
+            h3{
+                color: $fontcolor;
+                font-size: 25px;
+                font-style: inherit;
+                font-weight: 400;
+                font-family: $letraprincipal;
+            }
+}
+
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: $letraprincipal;
+    font-weight: 300;
+    font-style: $estilodeletra;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: $letraprincipal;
+    font-weight: 300;
+    font-style: $estilodeletra;
+
+}
+h4{
+    color: rgba(17, 17, 17, 0.562);
+    font-family: $letraprincipal;
+    font-style: $estilodeletra;
+    text-align: center;
+}
+
+.separador{
+    background-color: white;
+    padding: 20px;
+}
+
+.categoria{
+    text-align: center;
+    color: $fontcolor;
+    font-style: $estilodeletra;
+    
+}
+
+/* Parrafos */
+    
+p{
+    color: $fontcolor;
+    text-align: justify;
+    font-size: 20px;
+    font-family: $letraprincipal;
+    text-align: center;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+/* Tres columnas de productos */
+
+.column {
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  
+/* Efectos de la caja  */
+
+  .carta {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+
+  }
+  
+/* Clear floats */
+
+  .container:after, .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+  }
+
+/* Imagenes */
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner29.jpg");
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.imagenUno :hover{
+    filter: opacity(.5)
+}
+
+.imagenTres :hover{
+    filter: opacity(.5)
+}
+
+.grilla .fotosCasas :hover{
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}    
+
+  
+.button:hover {
+    background-color: #555;
+}
+
+/* Pie de Página */
+
+footer{
+    text-align: center;
+    background-color: #d4cfc69a;
+}  
+
+/* Grilla Casas Reales  */
+
+.grilla{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    justify-content: center;
+    grid-template-areas: "foto1 foto2 foto3" 
+                         "foto4 foto5 foto6"
+                         "foto7 foto8 foto9";
+    }
+        
+
+/* Aplicación de Media queries */
+
+/*Extra small */
+
+@media only screen and (max-width:600px){     
+
+   .grilla{
+       display: grid;
+       grid-template-columns: 100%;
+    }
+
+    .banner .bannerDos{
+        width: 100%;
+        background-position: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }   
+
+    .banner{
+        h1{
+            font-size: 15px;
+        }
+        h3{
+        font-size: 15px;
+        }
+    }
+
+    .bannerDos{
+        h1{
+            font-size: 15px;
+        }
+        h3{
+        font-size: 15px;
+        }
+    }
+
+
+    .contenedor{
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+      }
+   
+}
+    /*grande escritorio, notebook*/
+    
+     @media only screen and (min-width:992px){
+
+        .banner{
+            h1{
+                font-size: 15px;
+            }
+        }
+             
+                                   
+        .textoentrada {
+            text-align: center;
+            font-size: 20px;
+        }                   
+        
+        .banner{
+            h1{
+                font-size: 15px;
+            }
+        }
+
+}

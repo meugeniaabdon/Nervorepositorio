@@ -1,462 +1,303 @@
-@import url ('https://fonts.googleapis.com/css2? family = Cinzel: wght @ 500 & family = Source + Sans + 3: ital, wght @ 1200 & display = swap');
+@charset "UTF-8";
+/* Variables */
+/* SCSS */
+/* Barra de navegación */
+ul {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  text-align: right;
+  padding: 15px;
+  margin: auto;
+  color: black;
+  font-size: 18px;
+  font-family: "Cinzel", serif; }
 
-/* reset */
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
+.navbar-brand {
+  color: rgba(22, 21, 21, 0.733);
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Cinzel", serif;
+  font-weight: 900;
+  font-style: italic; }
 
-/* Diseño header */
+/* Imágenes principales */
+img {
+  width: 100%;
+  height: 100%; }
 
-ul{
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    text-align: right;
-    padding: 15px;
-    margin: auto;
-    color: black;
-    font-size: 18px;
-    font-family: 'Cinzel', serif;
-    width: 100%;
-}
+/* Banners */
+/* Banner página home */
+.banner {
+  height: 100vh;
+  position: relative;
+  background: url(../img/banner13.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
 
-.navbar-brand{
-    color: rgba(22, 21, 21, 0.733);
-    padding: 15px;
-    font-size: 20px;
-    font-family: 'Cinzel', serif;
-    font-weight: 900;
-    font-style: italic;
-}
+.banner_descripcion {
+  position: absolute;
+  text-align: center;
+  color: black;
+  transform: translateX(-50%) translateY(-50%);
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  font-family: "Cinzel", serif;
+  line-height: 1,5em;
+  font-size: 35px;
+  margin-top: 25px; }
 
-img{
-    width: 100%;
-    height: 100%;
-}
+/* Banner página Preguntas */
+.bannerTres {
+  height: 80vh;
+  background: url(../img/banner28.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
 
-.banner{
-    height: 100vh;
-    position: relative;
-    background: url(../img/banner13.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+.banner_descripcionTres {
+  position: absolute;
+  text-align: center;
+  color: black;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 25%;
+  width: 100%;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  margin-top: 25px; }
 
-}
+/* Banner página Casas reales */
+.bannerDos {
+  height: 100vh;
+  position: relative;
+  background: url(../img/banner10.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
 
-.bannerDos{
-    height: 100vh;
-    position: relative;
-    background: url(../img/banner10.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
+/* Botones de los banners */
+.button_banner {
+  background: #b49f7f;
+  border: none;
+  padding: 12px;
+  color: black;
+  font-size: 20px;
+  font-family: "Cinzel", serif; }
 
-.bannerTres{
-    height: 80vh;
-    background: url(../img/banner28.png);
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.banner_descripcion{
-    position: absolute;
-    text-align: center;
-    color: black;
-    transform: translateX(-50%) translateY(-50%);
-    top: 60%;
-    left: 50%;
-    width: 100%;
-    font-family: 'Cinzel', serif;
-    line-height: 1,5em;
-    font-size: 35px;
-    margin-top: 25px;
-}
-
-.banner_descripcionTres{
-    position: absolute;
-    text-align: center;
-    color: black;
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    left: 25%;
-    width: 100%;
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-    margin-top: 25px;
-}
-
-.banner_descripcionCuatro{
-    position: absolute;
-    text-align: center;
-    color: black;
-    top: 50%;
-    bottom: 10%;
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-       
-}
-.button_banner{
-    background: rgb(180, 159, 127);
-    border: none;
-    padding: 12px;
-    color: black;
-    font-size: 20px;
-    font-family: 'Cinzel', serif;
-}
-
-.button_banner:hover{
-    border: 2px ;
-    background: none;
-}
-
+.button_banner:hover {
+  border: 2px;
+  background: none; }
 
 /* Diseño main */
-
 main {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-}
+  background-color: white;
+  width: 100%;
+  height: 100%; }
 
-.casasreales h3{
-    font-family: 'Cinzel', serif;
-    font-size: 25px;
-    text-align: center;
-    color: black;
-}
+/* Página Casas Reales */
+.casasreales h3 {
+  font-family: "Cinzel", serif;
+  font-size: 25px;
+  text-align: center;
+  color: black; }
 
 .casasreales {
-    margin: 20px;
-}
+  margin: 20px; }
 
-.formcolor{
-   
-    font-family:'Cinzel', serif;
-    font-style: italic;
-    padding: 2em;
-    width: 39em;
-    margin: 0 auto;
-    
-}
+/* Formulario */
+.formcolor {
+  font-family: "Cinzel", serif;
+  font-style: italic;
+  padding: 2em;
+  width: 39em;
+  margin: 0 auto; }
 
-.card{
-    font-family:'Cinzel', serif;
-    font-style: italic;
-    padding: 2em;
-    width: 59em;
-    margin: 0 auto;
-
-}
-
+/* Caja de página home */
+.card {
+  font-family: "Cinzel", serif;
+  font-style: italic;
+  padding: 2em;
+  width: 59em;
+  margin: 0 auto; }
 
 /* Titulos y subtitulos */
+.titulo {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Cinzel", serif;
+  font-weight: 300; }
 
-.titulo{
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Cinzel', serif;
-    font-weight: 300;
-}
+.contenedor h2 {
+  color: black;
+  font-size: 30px;
+  font-family: "Cinzel", serif;
+  font-weight: 500; }
 
-.contenedor h2{
-    color: black;
-    font-size: 30px;
-    font-family: 'Cinzel', serif;
-    font-weight: 500;
-}
+.contenedor h3 {
+  color: black;
+  font-size: 25px;
+  font-style: inherit;
+  font-weight: 400;
+  font-family: "Cinzel", serif; }
 
-.contenedor h3{
-    color: black;
-    font-size: 25px;
-    font-style: inherit;
-    font-weight: 400;
-    font-family: 'Cinzel', serif;
-}
+h2 {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Cinzel", serif;
+  font-weight: 300;
+  font-style: italic; }
 
-h2{
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Cinzel', serif;
-    font-weight: 300;
-    font-style: italic;
+h3 {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Cinzel", serif;
+  font-weight: 300;
+  font-style: italic; }
 
-}
+h4 {
+  color: rgba(17, 17, 17, 0.562);
+  font-family: "Cinzel", serif;
+  font-style: italic;
+  text-align: center; }
 
-h3{
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Cinzel', serif;
-    font-weight: 300;
-    font-style: italic;
+.separador {
+  background-color: white;
+  padding: 20px; }
 
-}
-h4{
-    color: rgba(17, 17, 17, 0.562);
-    font-family: 'Cinzel', serif;
-    font-style: italic;
-    text-align: center;
-}
-
-.separador{
-    background-color: white;
-    padding: 20px;
-}
-
-.categoria{
-    text-align: center;
-    color: black;
-    font-style: italic;
-    
-}
+.categoria {
+  text-align: center;
+  color: black;
+  font-style: italic; }
 
 /* Parrafos */
-    
-p{
-    color: black;
-    text-align: justify;
-    font-size: 20px;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    font-weight: 400;
-    padding-left: 30px;
-    padding-right: 30px;
-
-}
+p {
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-weight: 400;
+  padding-left: 30px;
+  padding-right: 30px; }
 
 /* Tres columnas de productos */
-
 .column {
-    display: inline-block;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  
-/* Efectos de la caja  */
-  .carta {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .container {
-    padding: 0 16px;
+  display: inline-block;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px; }
 
-  }
-  
+/* Efectos de la caja  */
+.carta {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.container {
+  padding: 0 16px; }
+
 /* Clear floats */
-  .container:after, .row:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 80%;
-  }
+.container:after, .row:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.title {
+  color: grey; }
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%; }
 
 /* Imagenes */
-
-
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner29.jpg");
-    height: 100vh;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner29.jpg");
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
 
-  }
-  
 .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; }
 
-.imagenUno :hover{
-    filter: opacity(.5)
-}
+.imagenUno :hover {
+  filter: opacity(0.5); }
 
-.imagenTres :hover{
-    filter: opacity(.5)
-}
+.imagenTres :hover {
+  filter: opacity(0.5); }
 
-.grilla .fotosCasas :hover{
-    -webkit-transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-}    
+.grilla .fotosCasas :hover {
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d; }
 
-  
-  .button:hover {
-    background-color: #555;
-  }
+.button:hover {
+  background-color: #555; }
 
-footer{
-    text-align: center;
-    background-color: #d4cfc69a;
-}  
+/* Pie de Página */
+footer {
+  text-align: center;
+  background-color: #d4cfc69a; }
 
+/* Grilla Casas Reales  */
+.grilla {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  justify-content: center;
+  grid-template-areas: "foto1 foto2 foto3"  "foto4 foto5 foto6" "foto7 foto8 foto9"; }
 
-.grilla{
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: auto;
-    grid-gap: 15px;
-    justify-content: center;
-    grid-template-areas: "foto1 foto2 foto3" 
-                         "foto4 foto5 foto6"
-                         "foto7 foto8 foto9";
-    }
-    
-    
-          
-
+/* Aplicación de Media queries */
 /*Extra small */
+@media only screen and (max-width: 600px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: 100%; }
+  .banner .bannerDos {
+    width: 100%;
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .banner h1 {
+    font-size: 15px; }
+  .banner h3 {
+    font-size: 15px; }
+  .bannerDos h1 {
+    font-size: 15px; }
+  .bannerDos h3 {
+    font-size: 15px; }
+  .contenedor {
+    width: 100%; }
+  .column {
+    width: 100%;
+    display: block; } }
 
-@media only screen and (max-width:600px){
-
-
-        .grillaIndex{
-            display: grid;
-            grid-template-columns: 100%;
-            height: 1400px;
-            grid-template-rows: auto;
-            grid-template-areas: "parrafoIndexUno" 
-                                 "foto1"
-                                 "parrafoIndexDos"
-                                 "foto3";
-    }
-
-    .parrafoIndexUno{
-        text-align: center;
-        grid-area: "parrafoIndexUno";
-
-    }
-    .imagenUno{
-           grid-area: "foto1";
-    }
-
-    .imagenTres{
-    grid-area: "foto3";
-    }
-
-    .parrafoIndexDos{
-        text-align: center;
-        grid-area: "parrafoIndexDos";
-    }
-
-   .grilla{
-       display: grid;
-       grid-template-columns: 100%;
-    }
-
-    .banner .bannerDos{
-        width: 100%;
-        background-position: cover;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }   
-
-    .banner h1, h3{
-        font-size: 15px;
-    }
-
-    .bannerDos h1, h3{
-        font-size: 15px;
-    } 
-
-    .contenedor{
-        width: 100%;
-    }
-
-    .column {
-        width: 100%;
-        display: block;
-      }
-    }
-   
-}
-    /*grander escritorio, notebook*/
-    
-     @media only screen and (min-width:992px){
-             
-    .grillaIndex{
-            display: grid;
-            height: max-content;
-            justify-content: center;
-            row-gap: 20px;
-            grid-template-columns: 40% 40%;
-            grid-template-areas:"parrafo1 foto1"
-                                "foto3 parrafo2"
-                                }
-                                   
-    .parrafoIndexUno{
-        text-align: center;
-        margin: 10% 10% 10% 10%;
-        grid-area: "parrafoIndexUno";
-        }
-                                    
-    .imagenuno{
-        grid-area: "foto1";
-        }
-                                    
-    .imagenDos{
-        grid-area: "foto2";
-        }
-                                    
-    .imagentres{
-        grid-area: "foto3";
-        }
-                                    
-    .parrafoIndexDos{
-        text-align: center;
-        margin: 10% 10% 10% 10%;
-        grid-area: "parrafoIndexDos";
-        }
-                                    
-        .textoentrada {
-            text-align: center;
-            font-size: 20px;
-        }                   
-        
-        .banner h1{
-            font-size: 15px;
-        }
-    
-        .bannerDos h1{
-            font-size: 15px;
-        } 
-    
-        .textoentrada {
-            text-align: center;
-            font-size: 15px;
-
-    }
-
-}
-
+/*grande escritorio, notebook*/
+@media only screen and (min-width: 992px) {
+  .banner h1 {
+    font-size: 15px; }
+  .textoentrada {
+    text-align: center;
+    font-size: 20px; }
+  .banner h1 {
+    font-size: 15px; } }
