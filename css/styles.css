@@ -50,15 +50,16 @@ img {
   font-size: 35px;
   margin-top: 25px; }
 
-/* Banner página Preguntas */
+/* Banners */
+/* Página Preguntas */
 .bannerTres {
-  height: 80vh;
-  background: url(../img/banner28.png);
+  height: 100vh;
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  background: url(../img/banner28.png); }
 
 .banner_descripcionTres {
   position: absolute;
@@ -72,15 +73,15 @@ img {
   font-size: 20px;
   margin-top: 25px; }
 
-/* Banner página Casas reales */
+/* página Casas reales */
 .bannerDos {
   height: 100vh;
   position: relative;
-  background: url(../img/banner10.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  background: url(../img/banner10.png); }
 
 /* Botones de los banners */
 .button_banner {
@@ -253,6 +254,8 @@ p {
 .button:hover {
   background-color: #555; }
 
+
+
 /* Pie de Página */
 footer {
   text-align: center;
@@ -265,7 +268,9 @@ footer {
   grid-template-rows: auto;
   grid-gap: 15px;
   justify-content: center;
-  grid-template-areas: "foto1 foto2 foto3"  "foto4 foto5 foto6" "foto7 foto8 foto9"; }
+  grid-template-areas: "foto1 foto2 foto3" 
+ "foto4 foto5 foto6"
+ "foto7 foto8 foto9"; }
 
 /* Aplicación de Media queries */
 /*Extra small */
