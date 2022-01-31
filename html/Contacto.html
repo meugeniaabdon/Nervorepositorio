@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="shortcut icon" href="img/Logo NERVO Design-01.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/LOGO.png" type="image/x-icon">
   
 <!-- GoogleFonts -->
     <link rel = "preconnect" href = "https://fotps://fonts.gstatic.com" crossorigin>
@@ -28,113 +28,123 @@
 
 </head>
        
-    <body>
+<body>
                
-      <header>
+<header>
           
 <!-- Menu de navegacion + Logotipo -->
-       
-          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a39b8c65;">
-              <div class="container">
-                <a class="navbar-brand" href="index.html"> NERVO DESIGN</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-       
-                  <ul class="navbar-nav">
-                       
-                    <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Tiendaonline.html">Tienda Online</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Casasreales.html">Casas reales</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Preguntas.html">Preguntas</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Contacto.html">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a39b8c6b;">   
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="../img/LOGO.png" alt="Logo Bali"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav">
+           
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Tiendaonline.html">Tienda Online</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Casasreales.html">Casas reales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Preguntas.html">Preguntas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>          
     
+
+<!--Separador -->
 
 <div class="separador">
 
-<!--FORMULARIO -->
+<!--FORMULARIO y mapa de la ciudad de Córdoba -->
+
+<style>
+  .fondo {background:#a39b8c27; padding-top: 20px; padding-bottom: 20px;}
+</style>
 
 
-
-  <form action="login.php" method="get" class="formcolor" style= "background-color: #aca49585;">
-
-      <h3>CONTACTANOS</H3>
-        
-      <fieldset>
-    
+<div class="container_fluid fondo">
+  <div class="row w-75 mx-auto align-items-center g-2">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mx-auto">
+     <form action="login.php" method="get" class="formcolores">
+       <h3>CONTACTANOS</h3>
+      
+        <fieldset>
+     
         <div class="mb-3">
-            
+             
           <div><label for="exampleImputName" class="form-label">Nombre completo</label></div>
           <input type="Datos personales" class="form-control" id="exampleImputName" aria-describedby="NameHelp">
           <div><small id="namelHelp" class="form-text"> Nunca compartiremos tus datos personales con nadie.</small></div>
         </div>
-          
-        <div class="mb-3">
-            
-            <div><label for="exampleInputEmail1" class="form-label">Correo Electronico</label></div>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div><small class="form-text text-muted">Te brindaremos allí toda la información.</small></div>
-            
-        </div>   
+           
+         <div class="mb-3">
+             
+          <div><label for="exampleInputEmail1" class="form-label">Correo Electronico</label></div>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div><small class="form-text text-muted">Te brindaremos allí toda la información.</small></div>
+             
+         </div>   
+ 
+         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <option selected>Tipo de venta</option>
+          <option value="1">Venta mayorista</option>
+          <option value="2">Venta minorista</option>
+         </select>
+                 
+         <div><label for="ayuda">¿En qué podemos ayudarte? </label></div>
 
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-            <option selected>TIPO DE VENTA</option>
-            <option value="1">VENTAS MAYORISTAS</option>
-            <option value="2">VENTAS MINORISTAS</option>
-        </select>
-                
-        <div><label for="ayuda">En qué podemos ayudarte? </label></div>
-        <div>
-            <textarea name="ayuda" class="form-control" id="ayuda" cols="30" rows="10"></textarea>
-        </div>
-        
-    
+         <div><textarea name="ayuda" class="form-control" id="ayuda" cols="30" rows="10"></textarea></div>
+         
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="submit" class="btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);">ENVIAR CONSULTA</button>
+        <button type="submit" class="btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);">ENVIAR CONSULTA</button>
         </div>
-
-    
-    </fieldset>
-    </div>
-
+             
+  </fieldset>
+</div>
+ 
   </form>
+    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 mx-auto align-items-center">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.2534062056!2d-64.33443068351568!3d-31.399377042605156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1636645985570!5m2!1ses-419!2sar" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       
-   
-<div class="separador">
+  </div>  
 
+  <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 mx-auto align-items-center">
+    <h4>Encontranos en Instragram</h4>
+    <p>@balihome</p>
+    <h4>E-mail</h4>
+    <p> balihome@gmail.com</p>
+    <h4>Whats App</h4>
+    <p>+549 3515583435</p>
+
+  
+  </div>  
+  </div>  
 </div>
 
-<!--MAPA - CIUDAD DE CÓRDOBA -->
 
-<div class="mapa">
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.2534062056!2d-64.33443068351568!3d-31.399377042605156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1636645985570!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    
-</div>
+<!-- Link de Boostrap--> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</main>
 </body>
 
 <!-- PIE DE PÁGINA --> 
 <footer>
-    <h3>LOGO 
-    <h3>Home</h3>
-    <h3>Casas reales</h3>
-    <h3>Tienda Online</h3>
+  <h3>Todos los derechos reservados</h3>
     
 </footer>
 </html>

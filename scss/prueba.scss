@@ -12,18 +12,10 @@ ul{
     padding: 15px;
     margin: auto;
     color: $fontcolor;
-    font-size: 18px;
-    font-family: $letraprincipal
-
-}
-
-.navbar-brand{
-    color: rgba(22, 21, 21, 0.733);
-    padding: 15px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: $letraprincipal;
-    font-weight: 900;
     font-style: $estilodeletra;
+
 }
 
 /* Imágenes principales */
@@ -33,10 +25,9 @@ img{
     height: 100%;
 }
 
-
 /* Banners */
 
-/* Banner página home */
+/* Banner página home y descripción */
 
 .banner{
     height: 100vh;
@@ -63,10 +54,9 @@ img{
     margin-top: 25px;
 }
 
-/* Banners */
+/* Banners Mixin */
 
 @mixin bannersWeb {
-    height: 100vh;
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
@@ -75,37 +65,19 @@ img{
     
 }
 
-
-/* Página Preguntas */
-
-.bannerTres{
-    @include bannersWeb();
-    background: url(../img/banner28.png);
-    
-}
-
-.banner_descripcionTres{
-    position: absolute;
-    text-align: center;
-    color: $fontcolor;
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    left: 25%;
-    width: 100%;
-    font-family: $letraprincipal;
-    font-size: 20px;
-    margin-top: 25px;
-}
-
-/* página Casas reales */
+/* Banner Casas reales */
 
 .bannerDos{
-    @include bannersWeb();
-    background: url(../img/banner10.png);
- 
+    height: 60vh;
+    position: relative;
+    background: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-/* Botones de los banners */
+/* Botones */
 
 .button_banner{
     background: $colordebtn;
@@ -118,8 +90,21 @@ img{
 
 .button_banner:hover{
     border: 2px ;
-    background: none;
+    background: rgba(255, 255, 255, 0.568);
 }
+
+.button_tienda{
+    background: #a39b8c56;
+    border: none;
+    padding: 10px;
+    color: $fontcolor;
+    font-size: 12px;
+    font-family: $letraprincipal;
+}
+
+.button_tienda:hover {
+    border: 2px;
+    background: rgba(214, 212, 212, 0.452); }
 
 /* Diseño main */
 
@@ -131,20 +116,11 @@ main {
 
 /* Página Casas Reales */
 
-.casasreales{
-             h3{
-                font-family: $letraprincipal;
-                font-size: 25px;
-                text-align: center;
-                color: $fontcolor;
-            }
-}
-
 .casasreales {
     margin: 20px;
 }
 
-/* Formulario */
+/* Formulario de contacto */
 
 .formcolor{
    
@@ -155,6 +131,25 @@ main {
     margin: 0 auto;
     
 }
+
+/* Pagination links */
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+/* Style the active/current link */
+.pagination a.active {
+    background-color: #b9ae9a96;
+    color: white;
+  }
+  
+/* Add a grey background color on mouse-over */
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 /* Caja de página home */
 
@@ -169,13 +164,6 @@ main {
 
 /* Titulos y subtitulos */
 
-.titulo{
-    text-align: center;
-    font-size: 25px;
-    font-family: $letraprincipal;
-    font-weight: 300;
-}
-
 .contenedor{ 
             h2{
                 color: black;
@@ -186,37 +174,63 @@ main {
 
             h3{
                 color: $fontcolor;
-                font-size: 25px;
+                font-size: 20px;
                 font-style: inherit;
                 font-weight: 400;
                 font-family: $letraprincipal;
             }
 }
 
-
-h2{
+h1{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: $letraprincipal;
     font-weight: 300;
     font-style: $estilodeletra;
+}
 
+h2{
+    text-align: center;
+    font-size: 28px;
+    font-family: $letraprincipal;
+    font-weight: 800;
+    font-style: $estilodeletra;
 }
 
 h3{
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
     font-family: $letraprincipal;
-    font-weight: 300;
+    font-weight: 400;
     font-style: $estilodeletra;
 
 }
 h4{
+    font-size: 16px;
+    color: rgba(17, 17, 17, 0.945);
+    font-family: $letraprincipal;
+    font-style: $estilodeletra;
+    font-weight: 800;
+    text-align: center;
+}
+
+h5{
     color: rgba(17, 17, 17, 0.562);
+    font-size: 19px;
     font-family: $letraprincipal;
     font-style: $estilodeletra;
     text-align: center;
 }
+
+h6{
+    color: rgba(17, 17, 17, 0.884);
+    font-size: 15px;
+    font-family: $letraprincipal;
+    font-style: $estilodeletra;
+    font-weight: 700;
+    text-align: center;
+}
+
 
 .separador{
     background-color: white;
@@ -235,7 +249,7 @@ h4{
 p{
     color: $fontcolor;
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
     font-family: $letraprincipal;
     text-align: center;
     font-weight: 400;
@@ -244,40 +258,42 @@ p{
 
 }
 
-/* Tres columnas de productos */
+/* Columnas de productos en la tienda online */
 
 .column {
     display: inline-block;
-    width: 25%;
-    margin-bottom: 16px;
+    width: 20%;
+    margin-bottom: 10px;
     padding: 0 8px;
-  }
+    justify-content: center;
+    text-align: center;
+}
   
   
-/* Efectos de la caja  */
+/* Efectos de la caja de productos de la tienda online */
 
-  .carta {
+.carta {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
+}
   
-  .container {
+.container {
     padding: 0 16px;
 
-  }
+}
   
 /* Clear floats */
 
-  .container:after, .row:after {
+.container:after, .row:after {
     content: "";
     clear: both;
     display: table;
-  }
+}
   
-  .title {
-    color: grey;
-  }
+.title {
+    color: black;
+}
   
-  .button {
+.button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -287,21 +303,27 @@ p{
     text-align: center;
     cursor: pointer;
     width: 80%;
-  }
+}
 
-/* Imagenes */
+/* Imagenes y descripciones */
+
+.homeUno :hover{
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}    
 
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner29.jpg");
-    height: 100vh;
+    height: 50vh;
+    background-color:#a39b8c56;
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
 
-  }
+}
   
 .hero-text {
     text-align: center;
@@ -309,7 +331,7 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: $fontcolor ;
 }
 
 .imagenUno :hover{
@@ -331,36 +353,28 @@ p{
     background-color: #555;
 }
 
-  /* Style the container/contact section */
+/* Estilo del formulario */
   .container2 {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
-  }
+}
   
-  /* Create two columns that float next to eachother */
-  .column1 {
+/* Create two columns that float next to eachother */
+.column1 {
     float: left;
     width: 50%;
     margin-top: 6px;
     padding: 5px;
-  }
+}
   
-  /* Clear floats after the columns */
-  .row1:after {
+/* Clear floats after the columns */
+.row1:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column1, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-
 
 /* Pie de Página */
 
@@ -380,7 +394,7 @@ footer{
     grid-template-areas: "foto1 foto2 foto3" 
                          "foto4 foto5 foto6"
                          "foto7 foto8 foto9";
-    }
+}
         
 
 /* Aplicación de Media queries */
@@ -389,67 +403,74 @@ footer{
 
 @media only screen and (max-width:600px){     
 
-   .grilla{
-       display: grid;
-       grid-template-columns: 100%;
+.grilla{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.banner .bannerDos{
+    width: 100%;
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}   
+
+.banner{
+    h1{
+    font-size: 15px;
+    }
+    h3{
+    font-size: 15px;
+    }
+}
+
+.bannerDos{
+    h1{
+        font-size: 15px;
+    }
+    h3{
+    font-size: 15px;
+    }
+}
+
+
+.contenedor{
+    width: 100%;
+}
+
+.column {
+    width: 100%;
+    display: block;
+}
+   
+}
+
+    .column1, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
     }
 
-    .banner .bannerDos{
-        width: 100%;
-        background-position: cover;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }   
+
+/*grande escritorio, notebook*/
+    
+@media only screen and (min-width:992px){
 
     .banner{
         h1{
             font-size: 15px;
         }
-        h3{
-        font-size: 15px;
-        }
     }
-
-    .bannerDos{
+         
+                               
+    .textoentrada {
+        text-align: center;
+        font-size: 20px;
+    }                   
+    
+    .banner{
         h1{
             font-size: 15px;
         }
-        h3{
-        font-size: 15px;
-        }
     }
-
-
-    .contenedor{
-        width: 100%;
-    }
-
-    .column {
-        width: 100%;
-        display: block;
-      }
-   
-}
-    /*grande escritorio, notebook*/
-    
-     @media only screen and (min-width:992px){
-
-        .banner{
-            h1{
-                font-size: 15px;
-            }
-        }
-             
-                                   
-        .textoentrada {
-            text-align: center;
-            font-size: 20px;
-        }                   
-        
-        .banner{
-            h1{
-                font-size: 15px;
-            }
-        }
 
 }
