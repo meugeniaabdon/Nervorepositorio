@@ -304,7 +304,9 @@ footer {
   grid-template-rows: auto;
   grid-gap: 15px;
   justify-content: center;
-  grid-template-areas: "foto1 foto2 foto3"  "foto4 foto5 foto6" "foto7 foto8 foto9"; }
+  grid-template-areas: "foto1 foto2 foto3" 
+ "foto4 foto5 foto6"
+ "foto7 foto8 foto9"; }
 
 /* Aplicación de Media queries */
 /*Extra small */
